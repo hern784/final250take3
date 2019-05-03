@@ -136,10 +136,6 @@ def get_weather(zip_code):
         print('error: got response code %d' % response.status_code)
         print(response.text)
         return 0.0, 0.0
-def read():
-    f=open('save.txt', 'r')
-    desired_temp=f.read()
-    f.close()
 
 # main function with the logic for the thermostat
 
@@ -157,7 +153,8 @@ def main():
     global i
     global flag
 
-    read()
+    f=open('save.txt', 'r')
+    desired_temp = int(f.read())
 
     while True:
         try:
