@@ -152,9 +152,11 @@ def main():
     global wind_off
     global i
     global flag
-
-    f=open('save.txt', 'r')
-    desired_temp = int(f.read())
+    try:
+        f=open('save.txt', 'r')
+        desired_temp = int(f.read())
+    except FileNotFoundError:
+        print("no saved temp")
 
     while True:
         try:
