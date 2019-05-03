@@ -1,3 +1,7 @@
+#Richard Hernandez, Jae Shin
+#Insert Github repository link here.
+#lab09-team_hernandez
+
 import sys
 import time
 sys.path.append('/home/pi/Dexter/GrovePi/Software/Python')
