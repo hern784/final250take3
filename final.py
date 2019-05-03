@@ -154,7 +154,7 @@ def main():
     global flag
     try:
         f=open('save.txt', 'r')
-        desired_temp = int(f.read())
+        desired_temp = float(f.read())
     except FileNotFoundError:
         print("no saved temp")
 
