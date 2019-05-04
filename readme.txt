@@ -22,6 +22,9 @@ To run the program run:
 	#Run on VM
 	python3 mailClient.py -a rpi-jaeishin:4250 -p 123 -u test
 
+The energy usage is calculated in energy_usage.py. It uses matplotlib to graph the estimated energy consumption and cost. It calculated the correct cost of running the 
+thermostat.
+
 I used the documentation on this website as well as the book that comes
 with the grovepi to implement the hardware.
 ->http://wiki.seeedstudio.com/GrovePi_Plus/
