@@ -1,6 +1,6 @@
 #Richard Hernandez, Jae Shin
 #Insert Github repository link here.
-#lab09-team_hernandez
+#https://github.com/hern784/final250take3.git
 
 import sys
 import time
@@ -181,7 +181,7 @@ def main():
                     grovepi.digitalWrite(buzzer_pin, 1)
                     time.sleep(.1)
                     grovepi.digitalWrite(buzzer_pin, 0)                    
-                    if (mode <= 2):
+                    if (mode < 2):
                         mode = mode + 1
                     else:
                         mode = 0
